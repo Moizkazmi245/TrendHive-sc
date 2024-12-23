@@ -1,0 +1,116 @@
+
+
+.navbar-brand-img {
+  width: 60px; /* Adjust the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between image and text */
+}
+
+.navbar-brand {
+  font-size: 20px; /* Adjust font size if necessary */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+/* Card Styling */
+.card-div {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid rgb(182, 181, 181);
+  border-radius: 10px;
+  width: 100%; /* Default width for small screens */
+  max-width: 12rem; /* Limit max width for responsiveness */
+  height: auto; /* Adjust height dynamically */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.mt-auto{
+  display: flex;
+  justify-content: space-between;
+
+}
+.card-body .mt-auto {
+  margin-top: auto; /* Pushes buttons to the bottom */
+}
+
+.card-div img {
+  height: 200px; /* Uniform height */
+  object-fit: contain; /* Maintains aspect ratio without cropping */
+  width: 100%; /* Ensures the image stretches to fit its container */
+}
+
+
+.zoom-effect {
+  transition: transform 0.3s ease; 
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1); 
+}
+
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Initially hidden */
+  width: 50px;
+  height: 50px;
+  background-color: #007bff; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.custom-btn {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.icon-size{
+  font-size: 22px;
+
+}
+
+.fa-solid{
+  color: #0056b3;
+}
+
+/* @media only screen and (max-width : 991px){
+  .icon-count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+} */
+
+.checkOut-div {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.fa-bag-shopping{
+  color: #fcfbfb;
+  font-size: 22px;
+  margin-left: 3px;
+}
