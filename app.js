@@ -36,14 +36,17 @@ fetch('https://dummyjson.com/products')
 `
     })
   })
-
-
-
-
+.catch(err =>{
+  console.log(err);
   
-  function seeMore(id){
-    let data = JSON.stringify(id);
-    localStorage.setItem('cardDetails', data);
+})
+
+
+
+
+function seeMore(id) {
+  let data = JSON.stringify(id);
+  localStorage.setItem('cardDetails', data);
   window.location = './seeMore.html'
 }
 
@@ -82,6 +85,5 @@ function addToCart(id) {
 function checkOut() {
   console.log("Storing cart in localStorage...");
   localStorage.setItem('cart', JSON.stringify(productsArr));
-  console.log("Cart stored:", localStorage.getItem('cart'));
   window.location = './card.html';
 }

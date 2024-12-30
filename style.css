@@ -1,13 +1,15 @@
-
-
 .navbar-brand-img {
-  width: 60px; /* Adjust the width of the image */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Space between image and text */
+  width: 60px;
+  /* Adjust the width of the image */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-right: 10px;
+  /* Space between image and text */
 }
 
 .navbar-brand {
-  font-size: 20px; /* Adjust font size if necessary */
+  font-size: 20px;
+  /* Adjust font size if necessary */
 }
 
 .container {
@@ -23,9 +25,12 @@
   padding: 20px;
   border: 1px solid rgb(182, 181, 181);
   border-radius: 10px;
-  width: 100%; /* Default width for small screens */
-  max-width: 12rem; /* Limit max width for responsiveness */
-  height: auto; /* Adjust height dynamically */
+  width: 100%;
+  /* Default width for small screens */
+  max-width: 12rem;
+  /* Limit max width for responsiveness */
+  height: auto;
+  /* Adjust height dynamically */
 }
 
 .card-body {
@@ -33,28 +38,33 @@
   flex-direction: column;
 }
 
-.mt-auto{
+.mt-auto {
   display: flex;
   justify-content: space-between;
 
 }
+
 .card-body .mt-auto {
-  margin-top: auto; /* Pushes buttons to the bottom */
+  margin-top: auto;
+  /* Pushes buttons to the bottom */
 }
 
 .card-div img {
-  height: 200px; /* Uniform height */
-  object-fit: contain; /* Maintains aspect ratio without cropping */
-  width: 100%; /* Ensures the image stretches to fit its container */
+  height: 200px;
+  /* Uniform height */
+  object-fit: contain;
+  /* Maintains aspect ratio without cropping */
+  width: 100%;
+  /* Ensures the image stretches to fit its container */
 }
 
 
 .zoom-effect {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .zoom-effect:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 
@@ -62,21 +72,25 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none; /* Initially hidden */
+  display: none;
+  /* Initially hidden */
   width: 50px;
   height: 50px;
-  background-color: #007bff; /* Button color */
+  background-color: #007bff;
+  /* Button color */
   color: white;
   border: none;
   border-radius: 50%;
   font-size: 24px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  z-index: 1000; /* Ensure it stays on top */
+  z-index: 1000;
+  /* Ensure it stays on top */
 }
 
 .scroll-to-top:hover {
-  background-color: #0056b3; /* Darker color on hover */
+  background-color: #0056b3;
+  /* Darker color on hover */
 }
 
 .custom-btn {
@@ -86,12 +100,12 @@
   padding: 0;
 }
 
-.icon-size{
+.icon-size {
   font-size: 22px;
 
 }
 
-.fa-solid{
+.fa-solid {
   color: #0056b3;
 }
 
@@ -109,8 +123,39 @@
   margin-right: 10px;
 }
 
-.fa-bag-shopping{
+.fa-bag-shopping {
   color: #fcfbfb;
   font-size: 22px;
   margin-left: 3px;
+}
+
+.icon-count a {
+  text-decoration: none;
+  /* Removes the underline */
+
+}
+
+.icon-count a:hover {
+  text-decoration: none;
+  /* Ensures no underline appears on hover */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 540px;
+}
+
+.card-div {
+  position: relative;
+}
+
+.card-div .btn-danger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0 4px 0 4px;
+  /* z-index: 10; */
 }
