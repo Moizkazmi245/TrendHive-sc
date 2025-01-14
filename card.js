@@ -34,7 +34,7 @@ function renderItems() {
             </div>
             <div class="col-md-8 d-flex flex-column">
             <div class="card-body flex-grow-1">
-            <button class="btn btn-danger mt-3" onclick="deleteItem(${index})">X</button>
+            <button class="btn btn-danger" onclick="deleteItem(${index})">x</button>
             <h5 class="card-title">${item.title}</h5>
               <p class="card-text">${item.description}</p>
               <p class="card-text"><small class="text-muted"><strong>Price:</strong>$${(item.price * item.quantity).toFixed(2)}</small></p>
